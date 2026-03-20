@@ -1,0 +1,57 @@
+/* .App {
+  text-align: center;
+}
+*/
+
+.bi-trash,
+.bi-pencil
+{
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 8px;
+}
+.bi-trash{
+  background: #ef4444;
+  border: 1px solid red;
+}
+.bi-pencil{
+  background:#3b82f6;
+  border: 1px solid blue;
+}
+.bi-trash:hover{
+  background: #dc2626;
+}
+.bi-pencil:hover{
+  background:#2563eb;
+}
+
+
+body
+{
+  /* background: linear-gradient(135deg, #dbeafe, #e0f2fe, #f1f5f9); */
+  background: aquamarine repeat-y;
+}
+
+.card
+{
+  background: linear-gradient(135deg,#4facfe,#00f2fe);
+  color:#0f172a;
+  transition: transform 0.4s ease;
+}
+.card:hover
+{
+  transform: scale(1.12);
+}
+
+
+.form-label
+{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width:1000px){
+    #leftpart{
+      display: none !important;
+    }
+}
