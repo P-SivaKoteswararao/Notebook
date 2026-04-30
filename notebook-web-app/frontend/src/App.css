@@ -55,3 +55,21 @@ body
       display: none !important;
     }
 }
+
+@media screen and (max-width:430px){
+    .bi-eye-slash{
+        right: 74px !important;
+    }
+}
+
+@media screen and (max-width:400px){
+    .bi-eye-slash{
+        right: 54px !important;
+    }
+}
+
+@media screen and (max-width:375px){
+    .bi-eye-slash{
+        right: 28px !important;
+    }
+}

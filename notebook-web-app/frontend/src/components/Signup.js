@@ -77,32 +77,32 @@ function Signup(props) {
     return (
     <div className='container d-flex my-5' style={{justifyContent:"space-around"}}>
         <div id='leftpart' style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
-                <div style={{fontSize:"38px"}}>Welcome to Notebook</div>
-                <div style={{fontSize:"17px",maxWidth:"28vw"}}>Start organizing your ideas today and organize your thoughts effortlessly</div>
+                <div style={{fontSize:"44px"}}>Notebook</div>
+                <div style={{fontSize:"17px",maxWidth:"28vw"}}>Start organizing your ideas today and manage your thoughts effortlessly</div>
         </div>
         <div><form onSubmit={onsubmit} >
             <div style={{fontSize:"50px",marginBottom:"20px",color:"#1f2937"}}>Signup To Continue</div>
             <div className="mb-3">
                 <label htmlFor="username" className="form-label">Username</label>
-                <input type="text" className="form-control" name='username' value={info.username} onChange={change} id="username" aria-describedby="emailHelp" required/>
+                <input type="text" className="form-control" name='username' value={info.username} onChange={change} id="username" style={{width:"340px"}} aria-describedby="emailHelp" required/>
             </div>
             <div className="mb-3">
                 <label htmlFor="email" className="form-label">Email</label>
-                <input type="email" className="form-control" name='email' onChange={change} value={info.email} id="email" aria-describedby="emailHelp" required/>
+                <input type="email" className="form-control" name='email' onChange={change} value={info.email} id="email" style={{width:"340px"}} aria-describedby="emailHelp" required/>
             </div>
             <div className="mb-3">
                 <label htmlFor="password" className="form-label">Password</label>
                 <div style={{position:"relative"}}>
-                    <input type="password" className="form-control" name='password' value={info.password} onChange={change} id="password" required/>
-                    <i class="bi bi-eye-slash" id='eyechange1' style={{position:"absolute",right: "10px",top: "8px",padding: "0px 6px",cursor:"pointer"}} onClick={eye1}></i>
+                    <input type="password" className="form-control" name='password' value={info.password} onChange={change} style={{width:"340px"}} id="password" required/>
+                    <i className="bi bi-eye-slash" id='eyechange1' style={{position:"absolute",right: "100px",top: "8px",padding: "0px 6px",cursor:"pointer"}} onClick={eye1}></i>
                 </div>
             </div>
             <div className="mb-3">
                 <label htmlFor="cpassword" className="form-label">Confirm Password</label>
                 
                 <div style={{position:"relative"}}>
-                    <input type="password" className="form-control" name='cpassword' onChange={change} value={info.cpassword} id="cpassword" aria-describedby="emailHelp" required/>
-                    <i class="bi bi-eye-slash" id='eyechange2' style={{position:"absolute",right: "10px",top: "8px",padding: "0px 6px",cursor:"pointer"}} onClick={eye2}></i>
+                    <input type="password" className="form-control" name='cpassword' onChange={change} value={info.cpassword} id="cpassword" style={{width:"340px"}} aria-describedby="emailHelp" required/>
+                    <i className="bi bi-eye-slash" id='eyechange2' style={{position:"absolute",right: "100px",top: "8px",padding: "0px 6px",cursor:"pointer"}} onClick={eye2}></i>
                 </div>
             </div>
             <button type="submit" className="btn btn-primary">Signup</button>

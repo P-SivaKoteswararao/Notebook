@@ -58,27 +58,26 @@ function Login(props) {
     
     return (
     <div >
-        
         <div className='container d-flex my-5' style={{justifyContent:"space-around"}}>
             <div id='leftpart' style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
-                <div style={{fontSize:"54px"}}>Notebook</div>
-                <div style={{fontSize:"18px",maxWidth:"28vw"}}>Capture your ideas and keep them organized on Notebook</div>
+                <div style={{fontSize:"44px"}}>Welcome to Notebook</div>
+                <div style={{fontSize:"17px",maxWidth:"28vw"}}>Capture your ideas and keep them organized on Notebook</div>
             </div>
             <div><form onSubmit={onsubmit}>
                 <div style={{fontSize:"50px",marginBottom:"20px",color:"#1f2937"}}>Login To Continue</div>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email</label>
-                    <input type="email" className="form-control" id="email" name='email' placeholder='Enter email' value={info.email} onChange={change} aria-describedby="emailHelp" required/>
+                    <input type="email" className="form-control" id="email" name='email' placeholder='Enter email' value={info.email} onChange={change} style={{width:"350px"}} aria-describedby="emailHelp" required/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="password" className="form-label">Password</label>
                     <div style={{position:"relative"}}>
-                        <input type="password"  className="form-control" name='password' placeholder='Enter passsword' value={info.password} onChange={change} id="password" required/>
-                        <i className="bi bi-eye-slash" id="eyechange" style={{position:"absolute",right: "10px",top: "8px",padding: "0px 6px",cursor:"pointer"}} onClick={eye}></i>
+                        <input type="password"  className="form-control" name='password' placeholder='Enter passsword' value={info.password} style={{width:"350px"}} onChange={change} id="password" required/>
+                        <i className="bi bi-eye-slash" id="eyechange" style={{position:"absolute",right: "65px",top: "8px",padding: "0px 6px",cursor:"pointer"}} onClick={eye}></i>
                     </div>
                 </div>
                 <button type="submit" className="btn btn-primary">Login</button>
-                <div style={{marginTop:"10px"}}>Don't have an account? <Link to="/signup">sign up</Link></div>
+                <div style={{marginTop:"10px",fontSize:"larger"}}>Don't have an account? <Link to="/signup">sign up</Link></div>
             </form></div>
         </div>
     </div>
