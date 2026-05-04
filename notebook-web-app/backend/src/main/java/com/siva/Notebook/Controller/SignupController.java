@@ -9,12 +9,17 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RestController
 public class SignupController {
 
     @Autowired
     private SignupService signupService;
+
+    @GetMapping("/")
+    public String test(){
+        return "backend is running";
+    }
 
     @PostMapping("/signup")
     public ResponseEntity<Boolean> signUp(@RequestBody SignupDetails signupDetails){
