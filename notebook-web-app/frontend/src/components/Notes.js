@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import BASE_URL from './api';
 
 function Notes(props) {
 
@@ -15,7 +16,7 @@ function Notes(props) {
 
         const token = sessionStorage.getItem("token");
         // console.log(token);
-        const response = await fetch("http://localhost:8080/addNote",{
+        const response = await fetch(`${BASE_URL}/addNote`,{
                 method:"POST",
                 headers:{
                     "Content-Type" : "application/json",

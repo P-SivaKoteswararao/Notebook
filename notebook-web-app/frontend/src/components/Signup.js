@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import BASE_URL from './api';
 
 function Signup(props) {
 
@@ -26,7 +27,7 @@ function Signup(props) {
         }
         else
         {
-            const response = await fetch("http://localhost:8080/signup",{
+            const response = await fetch(`${BASE_URL}/signup`,{
                 method:"POST",
                 headers:{
                     "Content-Type" : "application/json"

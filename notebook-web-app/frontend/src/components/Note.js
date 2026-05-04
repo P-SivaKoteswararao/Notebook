@@ -1,6 +1,7 @@
 import React, {useState } from 'react'
 import { Modal } from 'bootstrap';
 import {useNavigate } from 'react-router-dom';
+import BASE_URL from './api';
 
 function Allnotes(props) {
 
@@ -9,7 +10,7 @@ function Allnotes(props) {
   const deleteNote = async()=>{
 
     const token = sessionStorage.getItem("token");
-    const response = await fetch(`http://localhost:8080/deleteNote/${props.note.id}`,{
+    const response = await fetch(`${BASE_URL}/deleteNote/${props.note.id}`,{
       method:"DELETE",
       headers:{
         "Content-Type" : "application/json",
@@ -30,7 +31,7 @@ function Allnotes(props) {
   const updateNote = async(note) =>{
     
     const token = sessionStorage.getItem("token");
-    const response = await fetch('http://localhost:8080/updateNote',{
+    const response = await fetch(`${BASE_URL}/updateNote`,{
       method:"POST",
       headers:{
         "Content-Type" : "application/json",

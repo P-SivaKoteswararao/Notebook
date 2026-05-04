@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Notes from './Notes'
 import Note from './Note'
 import { useNavigate } from 'react-router-dom';
+import BASE_URL from './api';
 
 function Home(props) {
 
@@ -10,7 +11,7 @@ function Home(props) {
 
   const fetchdata = async(token)=>{
 
-    const response = await fetch("http://localhost:8080/notes",{
+    const response = await fetch(`${BASE_URL}/notes`,{
       method:"GET",
       headers:{
         "Authorization": "Bearer "+token
