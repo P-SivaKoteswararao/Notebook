@@ -16,7 +16,7 @@ function Notes(props) {
 
         const token = sessionStorage.getItem("token");
         // console.log(token);
-        const response = await fetch(`${BASE_URL}/addNote`,{
+        await fetch(`${BASE_URL}/addNote`,{
                 method:"POST",
                 headers:{
                     "Content-Type" : "application/json",
