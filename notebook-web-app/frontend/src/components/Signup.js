@@ -81,7 +81,7 @@ function Signup(props) {
                 <div style={{fontSize:"44px"}}>Notebook</div>
                 <div style={{fontSize:"17px",maxWidth:"28vw"}}>Start organizing your ideas today and manage your thoughts effortlessly</div>
         </div>
-        <div><form onSubmit={onsubmit} >
+        <div className='colors2'><form onSubmit={onsubmit} >
             <div style={{fontSize:"50px",marginBottom:"20px",color:"#1f2937"}}>Signup To Continue</div>
             <div className="mb-3">
                 <label htmlFor="username" className="form-label">Username</label>
@@ -106,7 +106,7 @@ function Signup(props) {
                     <i className="bi bi-eye-slash" id='eyechange2' style={{position:"absolute",right: "100px",top: "8px",padding: "0px 6px",cursor:"pointer"}} onClick={eye2}></i>
                 </div>
             </div>
-            <button type="submit" className="btn btn-primary">Signup</button>
+            <button type="submit" className="btn btn-primary siva">Signup</button>
         </form></div>
     </div>
     )

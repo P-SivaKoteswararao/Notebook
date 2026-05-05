@@ -29,7 +29,7 @@
 body
 {
   /* background: linear-gradient(135deg, #dbeafe, #e0f2fe, #f1f5f9); */
-  background: aquamarine repeat-y;
+  background: aquamarine repeat-y !important;
 }
 
 .card
@@ -42,6 +42,8 @@ body
 {
   transform: scale(1.12);
 }
+
+
 
 
 .form-label
@@ -72,4 +74,30 @@ body
     .bi-eye-slash{
         right: 28px !important;
     }
+}
+
+
+@media screen and (max-width:470px){
+  .colors
+  {
+    border:2px solid rgb(156 39 176 / 42%);
+    border-radius: 4px;
+    margin:3px;
+  }
+  .colors2
+  {
+    border:2px solid rgb(156 39 176 / 42%);
+    border-radius: 4px;
+    margin:3px;
+    padding:14px;
+  }
+}
+
+.siva
+{
+  transition: trans 0.1s ease;
+}
+.siva:hover
+{
+  transform: scale(1.08);
 }

@@ -58,7 +58,7 @@ function Login(props) {
     }
     
     return (
-    <div >
+    <div className='colors'>
         <div className='container d-flex my-5' style={{justifyContent:"space-around"}}>
             <div id='leftpart' style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
                 <div style={{fontSize:"44px"}}>Welcome to Notebook</div>
@@ -77,7 +77,7 @@ function Login(props) {
                         <i className="bi bi-eye-slash" id="eyechange" style={{position:"absolute",right: "65px",top: "8px",padding: "0px 6px",cursor:"pointer"}} onClick={eye}></i>
                     </div>
                 </div>
-                <button type="submit" className="btn btn-primary">Login</button>
+                <button type="submit" className="btn btn-primary siva">Login</button>
                 <div style={{marginTop:"10px",fontSize:"larger"}}>Don't have an account? <Link to="/signup">sign up</Link></div>
             </form></div>
         </div>

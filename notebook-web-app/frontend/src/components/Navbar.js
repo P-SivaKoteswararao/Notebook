@@ -32,11 +32,11 @@ function Navbar(props) {
 
                     {sessionStorage.getItem("token")===null?
                     (<div className="d-flex" style={{gap:"16px"}}>
-                        <button className="btn btn-primary" type='button'><Link className="nav-link active" aria-current="page" to="/login">Login</Link></button>
-                        <button className="btn btn-primary" type='button'><Link className="nav-link active" aria-current="page" to="/signup">Signup</Link></button>
+                        <button className="btn btn-primary siva" type='button'><Link className="nav-link active" aria-current="page" to="/login">Login</Link></button>
+                        <button className="btn btn-primary siva" type='button'><Link className="nav-link active" aria-current="page" to="/signup">Signup</Link></button>
                     </div>):
                     (<div>
-                        <button className="btn btn-primary" type='button' onClick={change}>LogOut</button>
+                        <button className="btn btn-primary siva" type='button' onClick={change}>LogOut</button>
                     </div>)}
                 </div>
             </div>
